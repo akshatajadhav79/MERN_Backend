@@ -16,10 +16,6 @@ app.use(morgan("dev"));
 // connect MongoDB
 connect_db();
 
-// Test route
-app.get("/", (req, res) => {
-  res.json({ message: "User route working!" });
-});
 
 // Routes
 app.use("/api/user", userRouter);
